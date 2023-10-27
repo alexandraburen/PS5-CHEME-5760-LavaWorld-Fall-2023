@@ -23,9 +23,9 @@ weakdeps = ["ChainRulesCore", "Test"]
 
 [[deps.Adapt]]
 deps = ["LinearAlgebra", "Requires"]
-git-tree-sha1 = "76289dc51920fdc6e0013c872ba9551d54961c24"
+git-tree-sha1 = "02f731463748db57cc2ebfbd9fbc9ce8280d3433"
 uuid = "79e6a3ab-5dfb-504d-930d-738a2a938a0e"
-version = "3.6.2"
+version = "3.7.1"
 weakdeps = ["StaticArrays"]
 
     [deps.Adapt.extensions]
@@ -571,10 +571,10 @@ uuid = "82899510-4779-5014-852e-03e436cf321d"
 version = "1.0.0"
 
 [[deps.JLD2]]
-deps = ["FileIO", "MacroTools", "Mmap", "OrderedCollections", "Pkg", "Printf", "Reexport", "Requires", "TranscodingStreams", "UUIDs"]
-git-tree-sha1 = "572d024660119ee626938419c14db0db5f3f3283"
+deps = ["FileIO", "MacroTools", "Mmap", "OrderedCollections", "Pkg", "PrecompileTools", "Printf", "Reexport", "Requires", "TranscodingStreams", "UUIDs"]
+git-tree-sha1 = "ebec83429b5dea3857e071d927156207ebd6d617"
 uuid = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
-version = "0.4.36"
+version = "0.4.37"
 
 [[deps.JLFzf]]
 deps = ["Pipe", "REPL", "Random", "fzf_jll"]
@@ -602,9 +602,9 @@ version = "2.1.91+0"
 
 [[deps.JuMP]]
 deps = ["LinearAlgebra", "MacroTools", "MathOptInterface", "MutableArithmetics", "OrderedCollections", "Printf", "SnoopPrecompile", "SparseArrays"]
-git-tree-sha1 = "3700a700bc80856fe673b355123ae4574f2d5dfe"
+git-tree-sha1 = "25b2fcda4d455b6f93ac753730d741340ba4a4fe"
 uuid = "4076af6c-e467-56ae-b986-b466b2749572"
-version = "1.15.1"
+version = "1.16.0"
 
     [deps.JuMP.extensions]
     JuMPDimensionalDataExt = "DimensionalData"
@@ -782,6 +782,12 @@ git-tree-sha1 = "c1dd6d7978c12545b4179fb6153b9250c96b0075"
 uuid = "e6f89c97-d47a-5376-807f-9c37f3926c36"
 version = "1.0.3"
 
+[[deps.LsqFit]]
+deps = ["Distributions", "ForwardDiff", "LinearAlgebra", "NLSolversBase", "Printf", "StatsAPI"]
+git-tree-sha1 = "40acc20cfb253cf061c1a2a2ea28de85235eeee1"
+uuid = "2fda8390-95c7-5789-9bda-21331edee243"
+version = "0.15.0"
+
 [[deps.MKL_jll]]
 deps = ["Artifacts", "IntelOpenMP_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "Pkg"]
 git-tree-sha1 = "eb006abbd7041c28e0d16260e50a24f8f9104913"
@@ -806,9 +812,9 @@ uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
 
 [[deps.MathOptInterface]]
 deps = ["BenchmarkTools", "CodecBzip2", "CodecZlib", "DataStructures", "ForwardDiff", "JSON", "LinearAlgebra", "MutableArithmetics", "NaNMath", "OrderedCollections", "PrecompileTools", "Printf", "SparseArrays", "SpecialFunctions", "Test", "Unicode"]
-git-tree-sha1 = "5c9f1e635e8d491297e596b56fec1c95eafb95a3"
+git-tree-sha1 = "13b3d40084d04e609e0509730f05215fb2a2fba4"
 uuid = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
-version = "1.20.1"
+version = "1.21.0"
 
 [[deps.MbedTLS]]
 deps = ["Dates", "MbedTLS_jll", "MozillaCACerts_jll", "Random", "Sockets"]
@@ -1366,15 +1372,15 @@ version = "0.2.0"
 
 [[deps.VLDecisionsPackage]]
 deps = ["Distributions", "GLPK", "GridInterpolations", "JuMP", "LinearAlgebra", "MadNLP", "MathOptInterface", "Optim", "Plots"]
-git-tree-sha1 = "183ef31a34b70c565c92f2523db12fcd173a4fae"
+git-tree-sha1 = "c9f9d5f75a244ce45114f445d590c456bbdb9715"
 repo-rev = "main"
 repo-url = "https://github.com/varnerlab/VLDecisionsPackage.jl.git"
 uuid = "10f378ab-a542-46fe-a8d0-50b9cbff3618"
 version = "0.1.0"
 
 [[deps.VLQuantitativeFinancePackage]]
-deps = ["CSV", "DataFrames", "Distributions", "JLD2", "JuMP", "LinearAlgebra", "MadNLP", "Statistics"]
-git-tree-sha1 = "cf2da86f0734784f63b4cb17322563ce0993987b"
+deps = ["CSV", "DataFrames", "Distributions", "JLD2", "JuMP", "LinearAlgebra", "LsqFit", "MadNLP", "Statistics"]
+git-tree-sha1 = "4b99c451bb569814f57229dbcea44e6d93f5ccfa"
 repo-rev = "main"
 repo-url = "https://github.com/varnerlab/VLQuantitativeFinancePackage.jl.git"
 uuid = "4119e0bf-20d0-4785-913e-5ebdb0caa218"
